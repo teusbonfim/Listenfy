@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<style>
+    @font-face {
+        font-family: aliens;
+        src: url(Fonts/aliens\ and\ cows_trial.ttf);
+    }
+</style>
+<style>
+    @font-face {
+        font-family: opensans;
+        src: url(Fonts/OpenSans-Regular.ttf);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listenfy</title>
+    <link rel="stylesheet" href="pop.css" />
+</head>
+
+<body class="rockpagina">
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li class="sugestoes"><a href="#" onclick="abrirPopup()"><b>Sugestões</b></a></li>
+                <li class="inicio"><a href="Listenfy Principal.html"><b>Início</b></a></li>
+                <li class="generos dropdown">
+                    <a href="#"><b>Gêneros</b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Rock Pagina.html"><b>Rock</b></a></li>
+                        <li><a href="Pop pagina.html"><b>Pop</b></a></li>
+                        <li><a href="ravesphere pagina.html"><b>Ravesphere</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="listenfyform.html"><b>Login/Regis.</b></a>
+            <i class="user-icon"></i>
+        </div>
+    </header>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="fechar-btn" onclick="fecharPopup()">×</button>
+            <h2>Sugestões</h2>
+            <p>Aqui você pode adicionar suas sugestões.</p>
+            <textarea placeholder="Digite suas sugestões aqui..."></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+    <!-- Adicionando o JavaScript -->
+    <script>
+        function abrirPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function fecharPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <!-- Navbar -->
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container-rock-logo">
+            <img class="rock-logo" src="img/Pop/logopop.png" alt="Rock Logo">
+        </div>
+
+        <div class="container-rock-barra">
+            <img class="rock-barra" src="img/Pop/barra.png" alt="Barra divisória Rock">
+        </div>
+
+        <!-- Informações sobre o gênero Rock -->
+
+        <section class="rock-info">
+            <div class="rock-description1">
+                <p>
+
+                    O gênero pop é um estilo musical que surgiu nos anos 1950-60, como uma evolução da música popular,
+                    com o objetivo de criar músicas acessíveis e cativantes para o grande público. Caracteriza-se por
+                    melodias fáceis de lembrar, refrões marcantes e temas universais, como amor e diversão. O pop é
+                    versátil, incorporando elementos de vários outros gêneros, como rock, dance, R&B, hip-hop e música
+                    eletrônica. Sua produção é sofisticada, com uso avançado de tecnologia para criar sons polidos. Ao
+                    longo das décadas, artistas como Beatles, Madonna, Michael Jackson e mais recentemente Beyoncé e
+                    Taylor Swift, ajudaram a moldar e expandir o pop, mantendo-o sempre atual e relevante, tanto
+                    musicalmente quanto culturalmente.
+                </p>
+            </div>
+        </section>
+
+        <div class="container-rock-tribal">
+            <img class="rock-tribal" src="img/Pop/barraescreva.png" alt="Divisão Tribal Rock">
+        </div>
+
+        <!-- Playlist -->
+
+        <section class="album-info">
+            <div class="album">
+                <a href="https://open.spotify.com/intl-pt/album/1bwbZJ6khPJyVpOaqgKsoZ?si=b3c26d54574d4600"
+                    target="_blank">
+                    <img src="img/Pop/Capas/4.png" alt="Linkin Park e Jay-Z">
+                </a>
+                <h2>Metro Boomin</h2>
+                <p>Spider-man Across the Spider-verse</p>
+            </div>
+
+            <div class="album">
+                <a href="https://open.spotify.com/intl-pt/album/5EYKrEDnKhhcNxGedaRQeK?si=mPASQv8bSIOPCH4nQfeejg"
+                    target="_blank">
+                    <img src="img/Pop/Capas/5.png" alt="Playlist House">
+                </a>
+                <h2>Ariana Grande</h2>
+                <p>Eternal Sunshine</p>
+            </div>
+
+            <div class="album">
+                <a href="https://open.spotify.com/intl-pt/album/6rePArBMb5nLWEaY9aQqL4?si=6214a1b389194c19"
+                    target="_blank">
+                    <img src="img/Pop/Capas/6.png" alt="Playlist House">
+                </a>
+                <h2>Lady Gaga</h2>
+                <p>The Fame Monster</p>
+            </div>
+        </section>
+
+        <div align="center">
+            <br>
+            <div class="container-rock-hq">
+                <img class="rock-hq" src="img/Pop/barramaps.png" alt="Divisão Tribal Rock">
+            </div>
+            <br>
+
+            <!-- Mapa do Google Maps -->
+            <div class="map-container">
+                <div class="map">
+                    <h7><b>─ VU Bar ─</b></h7>
+                    <br>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.4462936580353!2d-49.28289908736574!3d-25.423338777472715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce4063c89754f%3A0x3379f25ac3327e80!2sVU%20Bar!5e0!3m2!1spt-BR!2sbr!4v1732144921042!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map">
+                    <h7><b>─ Bwayne ─</b></h7>
+                    <br>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.349781807295!2d-49.277895687365486!3d-25.426566977470358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce40e72d82e33%3A0xadbdb09cddb84d8!2sBwayne!5e0!3m2!1spt-BR!2sbr!4v1732144965611!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <footer> <!-- RODAPÉ -->
+                <p>&copy; 2024 Listenfy - Todos os direitos reservados ─ by M&M.</p>
+            </footer>
+
+</body>
+
+</html>

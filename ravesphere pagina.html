@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" /> <!-- site aceitará caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RaveSphere</title>
+  <link rel="stylesheet" href="ravesphere.css" />
+
+  <style>
+    @font-face {
+      font-family: opensans;
+      src: url(Fonts/OpenSans-Regular.ttf);
+    }
+  </style>
+  <style>
+    @font-face {
+      font-family: horizon;
+      src: url(Fonts/horizon_outlined.otf);
+    }
+  </style>
+
+  <style>
+    @font-face {
+      font-family: horizonb;
+      src: url(Fonts/horizon.otf);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+<header>
+  <nav>
+      <ul>
+          <li class="sugestoes"><a href="#" onclick="abrirPopup()"><b>Sugestões</b></a></li>
+          <li class="inicio"><a href="Listenfy Principal.html"><b>Início</b></a></li>
+          <li class="generos dropdown">
+              <a href="#"><b>Gêneros</b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="Rock Pagina.html"><b>Rock</b></a></li>
+                  <li><a href="Pop pagina.html"><b>Pop</b></a></li>
+                  <li><a href="ravesphere pagina.html"><b>Ravesphere</b></a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  <div class="login">
+      <a href="listenfyform.html"><b>Login/Regis.</b></a>
+      <i class="user-icon"></i>
+  </div>
+</header>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <button class="fechar-btn" onclick="fecharPopup()">×</button>
+      <h2>Sugestões</h2>
+      <p>Aqui você pode adicionar suas sugestões.</p>
+      <textarea placeholder="Digite suas sugestões aqui..."></textarea>
+      <button>Enviar</button>
+  </div>
+</div>
+<!-- Adicionando o JavaScript -->
+<script>
+  function abrirPopup() {
+      document.getElementById('popup').style.display = 'flex';
+  }
+
+  function fecharPopup() {
+      document.getElementById('popup').style.display = 'none';
+  }
+</script>
+<!-- Navbar -->
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <div align="center">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="titulo1">RAVESPHERE</h1> 
+      <br>
+      <p class="subtitulo">Algumas recomendações de albuns:</p>
+
+      <section class="genre-info">
+        <div class="playlist">
+          <a href="https://open.spotify.com/playlist/4XuzlFravaQzOOQR5dceIn" target="_blank">
+            <img src="img/raveshephere/techno.jpeg" alt="Techno Playlist" />
+            <div class="playlist-info">
+              <h2>Techno Music</h2>
+              <p>By PURE music</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="genre-description">
+          <div align="right">
+            <h2>TECHNO</h2>
+            <p>
+              O gênero techno é um dos pilares da música eletrônica, caracterizado
+              por seu som futurista, uso intensivo de sintetizadores e batidas 4/4
+              repetitivas e hipnotizantes. Originado em Detroit, nos Estados
+              Unidos, durante os anos 1980, o techno é muitas vezes associado à
+              inovação tecnológica e a uma visão utópica ou distópica do futuro.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+      <div class="container-rock-barra">
+        <img class="rock-barra" src="img/raveshephere/1.gif" alt="Barra divisória Rock">
+      </div>
+
+      <br />
+      <br />
+
+      <section class="genre-info">
+        <div class="playlist">
+          <a href="https://open.spotify.com/intl-pt/album/1rmbZkMKbxvWl3YcjsNWFL" target="_blank">
+            <img src="img/raveshephere/minimal.jpeg" alt="Minimal playlist" />
+            <div class="playlist-info">
+              <h2>Minimal</h2>
+              <p>By Minimal Boys Collection</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="genre-description">
+          <div align="right">
+            <h2>MINIMAL</h2>
+            <p>
+              Minimal Techno ou simplesmente Minimal, é um estilo de música eletrônica, geralmente considerado como o
+              subgênero minimalista derivado do Techno.
+              É caracterizado pela repetição de batidas e sons, ou seja, pelo uso de um mínimo de elementos de
+              composição.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+
+      <div class="container-rock-barra">
+        <img class="rock-barra" src="img/raveshephere/2.gif" alt="Barra divisória Rock">
+      </div>
+      <br>
+      <br>
+
+      <section class="genre-info">
+        <div class="playlist">
+          <a href="https://open.spotify.com/intl-pt/album/0J1UklpBuJzV8Aj1cJHVKP" target="_blank">
+            <img src="img/raveshephere/house.png" alt="House playlist" />
+            <div class="playlist-info">
+              <h2>HOUSE</h2>
+              <p>By House dj set</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="genre-description">
+          <div align="right">
+            <h2>HOUSE</h2>
+            <p>
+              O house é universal, celebrando a liberdade, a união e a emoção coletiva. De clubes underground a grandes
+              festivais, o house continua a ser uma força viva no mundo da música eletrônica, criando uma conexão
+              instantânea entre DJ e público. A música house é uma celebração do movimento, da energia e da
+              positividade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr style="border: 0; height: 1px; background-color: rgb(43, 255, 0); width: 35%; margin: 0 auto;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div align="center">
+        <br>
+        <p class="titulomaps">Quer curtir de perto?</p>
+        <br>
+
+        <!-- Mapa do Google Maps -->
+        <div class="map-container">
+          <div class="map">
+              <h7><b>─ CLUB VIBE ─</b></h7>
+              <br>
+              <br>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115298.85907333401!2d-49.365606624658795!3d-25.4352763176537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x94dce4754bf7b417%3A0x307c185f22e27b69!2sRua%20Desembargador%20Motta%2C%202311%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080420-190!3m2!1d-25.4352993!2d-49.283205099999996!5e0!3m2!1spt-BR!2sbr!4v1731784165829!5m2!1spt-BR!2sbr"
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map">
+              <h7><b>─ ParkArt ─</b></h7>
+              <br>
+              <br>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3222786703645!2d-49.17662792460958!3d-25.46091197754216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcf025df9e13bd%3A0xaccc2c1fd6007979!2sPark.Art!5e0!3m2!1spt-BR!2sbr!4v1731784485058!5m2!1spt-BR!2sbr"
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <footer> <!-- RODAPÉ -->
+        <p>&copy; 2024 Listenfy - Todos os direitos reservados ─ by M&M.</p>
+    </footer>
+</body>
+
+</html>

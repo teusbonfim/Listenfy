@@ -1,1 +1,4 @@
-Site para sugestão de músicas
+Site para sugestão de músicas.
+-POP
+-ROCK
+-ELETRONICA
