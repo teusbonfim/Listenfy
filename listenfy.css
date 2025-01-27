@@ -1,0 +1,460 @@
+/* Reset de margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1c1b1b;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/menulogin/Fundobranco.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: top center;
+    /* Centraliza horizontalmente */
+    height: 100vh;
+    /* Garante que o body ocupe toda a altura da tela */
+    font-family: "Open Sans", sans-serif;
+
+}
+
+/* Navbar */
+header {
+    font-family: opensans;
+    gap: 50px;
+    width: 89%;
+    height: 8%;
+    background-color: #00bf63;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Espaço entre navegação e login */
+    position: fixed;
+    /* Fixa a barra na tela */
+    top: 7%;
+    /* Fixa no topo */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    /* Corrige o deslocamento */
+    z-index: 1000;
+    /* Garante que a navbar fique acima de outros elementos */
+    border-radius: 1vh;
+    box-shadow: 0px 0px 20px #000000;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li.sugestoes a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li.inicio a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li.generos a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover nos botões */
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #00bf63;
+}
+
+
+.login {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login a:hover {
+    background-color: #ffffff;
+    color: #00bf63;
+}
+
+/*  POP UP */
+/* Estilo do pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo do pop-up */
+.popup-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Botão de fechar */
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.popup textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.popup button {
+    margin-top: 10px;
+    background-color: #00bf63;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: #007f45;
+}
+
+.fechar-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.fechar-btn:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+}
+/*pop up*/
+
+/* Estilo do dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00bf63;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ffffff;
+    color: #00bf63;
+}
+
+/* Exibir menu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Navbar */
+
+/* Menu Inicial */
+
+/* área da div principal */
+.container {
+    padding-top: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    /* A altura da tela */
+}
+
+/* A div com imagem de fundo e texto centralizado */
+.imagem-com-texto {
+    width: 98%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Espaço entre as linhas */
+.imagem-com-texto p {
+    margin: 10px 0;
+    /* Espaço entre as linhas */
+}
+
+.titulo1 {
+    color: #06b860;
+    font-family: opensans;
+    font-size: 8vw;
+}
+
+.frase1 {
+    color: white;
+    font-family: opensans;
+    font-size: 1.5vw;
+}
+
+/* Menu Inicial */
+hr {
+    margin: 20px auto;    
+    border-color: #00bf63;
+    width: 50%;
+    height: 5px;
+    background-color: #00bf63;
+}
+.escolha {
+    padding-top: 5%;
+    color: white;
+    font-family: opensans;
+    font-size: 1.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 135px;
+}
+
+/* ROCK */
+
+/* Container principal */
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+    /* Impede que o vídeo ultrapasse a div */
+    margin: 0 auto;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
+}
+
+/* Vídeo de fundo */
+.video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Coloca o vídeo atrás do texto */
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Preenche a área da div sem distorção */
+    filter: blur(10px);
+    /* Aplica o desfoque ao vídeo */
+}
+
+.rock a {
+    
+    text-decoration: none;
+    font-family: aliens;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 1;
+}
+
+
+.rock p {
+    letter-spacing: 15px;
+    font-size: 9vw;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* ROCK */
+
+
+/* pop */
+
+/* Container principal */
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    /* Altura da viewport */
+    position: relative;
+    overflow: hidden;
+    /* Impede que o vídeo ultrapasse a div */
+    margin: 0 auto;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
+
+}
+
+/* Vídeo de fundo */
+.video-background1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Coloca o vídeo atrás do texto */
+    overflow: hidden;
+}
+
+.video-background1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Preenche a área da div sem distorção */
+    filter: blur(30px);
+    /* Aplica o desfoque ao vídeo */
+}
+
+.poplogo {
+    width: 700px;
+    height: auto; /* Mantém a proporção da logo */
+    margin-bottom: 20px;
+}
+
+
+/* pop */
+
+/* pop */
+
+/* Container principal */
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+    /* Altura da viewport */
+    position: relative;
+    overflow: hidden;
+    /* Impede que o vídeo ultrapasse a div */
+    margin: 0 auto;
+    border-radius: 1vh;
+    box-shadow: 0px 0px 40px rgb(0, 0, 0);
+
+}
+
+/* Vídeo de fundo */
+.video-background2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Coloca o vídeo atrás do texto */
+    overflow: hidden;
+}
+
+.video-background2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(15px);
+    /* Preenche a área da div sem distorção */
+    /* Aplica o desfoque ao vídeo */
+}
+
+/* Texto sobre o vídeo */
+.eletronica a {
+    text-decoration: none;
+    font-family: horizonb;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    z-index: 1;
+    /* Garante que o texto fique acima do vídeo */
+    text-shadow: 15px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.eletronica p {
+    font-size: 3.5vw;
+    margin: 10px 0;
+}
+
+/* pop */
+

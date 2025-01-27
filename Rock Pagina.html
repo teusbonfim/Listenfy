@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<style>
+    @font-face {
+        font-family: aliens;
+        src: url(Fonts/aliens\ and\ cows_trial.ttf);
+    }
+</style>
+<style>
+    @font-face {
+        font-family: opensans;
+        src: url(Fonts/OpenSans-Regular.ttf);
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listenfy</title>
+    <link rel="stylesheet" href="rock.css" />
+</head>
+
+<body class="rockpagina">
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li class="sugestoes"><a href="#" onclick="abrirPopup()"><b>Sugestões</b></a></li>
+                <li class="inicio"><a href="Listenfy Principal.html"><b>Início</b></a></li>
+                <li class="generos dropdown">
+                    <a href="#"><b>Gêneros</b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Rock Pagina.html"><b>Rock</b></a></li>
+                        <li><a href="Pop pagina.html"><b>Pop</b></a></li>
+                        <li><a href="ravesphere pagina.html"><b>Ravesphere</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="listenfyform.html"><b>Login/Regis.</b></a>
+            <i class="user-icon"></i>
+        </div>
+    </header>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="fechar-btn" onclick="fecharPopup()">×</button>
+            <h2>Sugestões</h2>
+            <p>Aqui você pode adicionar suas sugestões.</p>
+            <textarea placeholder="Digite suas sugestões aqui..."></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+    <!-- Adicionando o JavaScript -->
+    <script>
+        function abrirPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function fecharPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <!-- Navbar -->
+
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="container-rock-logo">
+            <img class="rock-logo" src="img/Rock/Rock Logo.png" alt="Rock Logo">
+        </div>
+
+        <div class="container-rock-barra">
+            <img class="rock-barra" src="img/Rock/Braço divisão.png" alt="Barra divisória Rock">
+        </div>
+
+        <!-- Informações sobre o gênero Rock -->
+
+        <section class="rock-info">
+            <div class="rock-description1">
+                <p>
+                    O rock é um dos gêneros musicais mais influentes e diversificados, conhecido por sua energia
+                    vibrante, letras marcantes e variações estilísticas. Surgiu nos Estados Unidos durante os anos
+                    1950, evoluindo do rock and roll, que misturava elementos do rhythm and blues (R&B), country e
+                    gospel. Desde então, tornou-se um fenômeno global, moldando a cultura popular e inspirando
+                    inúmeros subgêneros.
+                </p>
+            </div>
+        </section>
+
+        <div class="container-rock-tribal">
+            <img class="rock-tribal" src="img/Rock/DIVISÃO TRIBAL.png" alt="Divisão Tribal Rock">
+        </div>
+
+        <!-- Playlist -->
+        <section class="rock-info">
+            <div class="rock-description2">
+                <p>Albuns</p>
+            </div>
+        </section>
+
+        <section class="album-info">
+            <div class="album">
+                <a href="https://open.spotify.com/intl-pt/album/5NH94cATqx5fjBE794xZLy?si=HOeUyOZsSCCjV7pxE-uS3g"
+                    target="_blank">
+                    <img src="img/Rock/Capas de album/1.png" alt="Linkin Park e Jay-Z">
+                </a>
+                <h2>Linkin Park x Jay-Z</h2>
+                <p>Collision Course</p>
+            </div>
+
+            <div class="album">
+                <a href="https://open.spotify.com/intl-pt/album/23MOdUJkZlG971DVuEINMr?si=vTTfZcSsR026oCVueXrytA"
+                    target="_blank">
+                    <img src="img/Rock/Capas de album/2.png" alt="Playlist House">
+                </a>
+                <h2>The Distillers</h2>
+                <p>Coral Fang</p>
+            </div>
+
+            <div class="album">
+                <a href="https://open.spotify.com/intl-pt/album/4hJqOIahWodpSJU6uDgjvN?si=8a3ba2c7197a4a92"
+                    target="_blank">
+                    <img src="img/Rock/Capas de album/3.png" alt="Playlist House">
+                </a>
+                <h2>Dire Straits</h2>
+                <p>Lover Over Gold</p>
+            </div>
+        </section>
+
+        <div align="center">
+            <br>
+            <p class="titulomaps">Quer curtir de perto?</p>
+            <br>
+
+            <!-- Mapa do Google Maps -->
+            <div class="map-container">
+                <div class="map">
+                    <h7><b>─ 92 Graus ─</b></h7>
+                    <br>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.4472588669937!2d-49.283288390525556!3d-25.423306490514722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce40545d964ff%3A0x94091c0698286546!2s92%20Graus!5e0!3m2!1spt-BR!2sbr!4v1732144710991!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map">
+                    <h7><b>─ Blood Rock Bar ─</b></h7>
+                    <br>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.40613808155!2d-49.27932708736554!3d-25.42468197747171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce40f10078bd7%3A0x47f103cff3e9b6a!2sBlood%20Rock!5e0!3m2!1spt-BR!2sbr!4v1732144823434!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <footer> <!-- RODAPÉ -->
+                <p>&copy; 2024 Listenfy - Todos os direitos reservados ─ by M&M.</p>
+            </footer>
+
+</body>
+
+</html>

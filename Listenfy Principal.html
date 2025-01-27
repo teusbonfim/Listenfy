@@ -1,0 +1,172 @@
+<html>
+<link rel="stylesheet" tpe="text/css" href="listenfy.css">
+
+<head>
+    <title>Listenfy</title>
+    <style>
+        @font-face {
+            font-family: opensans;
+            src: url(Fonts/OpenSans-Regular.ttf);
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: aliens;
+            src: url(Fonts/aliens\ and\ cows_trial.ttf);
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: intro;
+            src: url(Fonts/IntroRust-BaseShade.otf);
+        }
+    </style>
+      <style>
+        @font-face {
+          font-family: horizon;
+          src: url(Fonts/horizon_outlined.otf);
+        }
+      </style>
+    
+      <style>
+        @font-face {
+          font-family: horizonb;
+          src: url(Fonts/horizon.otf);
+        }
+      </style>
+
+</head>
+
+
+<body> 
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li class="sugestoes"><a href="#" onclick="abrirPopup()"><b>Sugestões</b></a></li>
+                <li class="inicio"><a href="Listenfy Principal.html"><b>Início</b></a></li>
+                <li class="generos dropdown">
+                    <a href="#"><b>Gêneros</b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Rock Pagina.html"><b>Rock</b></a></li>
+                        <li><a href="Pop pagina.html"><b>Pop</b></a></li>
+                        <li><a href="ravesphere pagina.html"><b>Ravesphere</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="listenfyform.html"><b>Login/Regis.</b></a>
+            <i class="user-icon"></i>
+        </div>
+    </header>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="fechar-btn" onclick="fecharPopup()">×</button>
+            <h2>Sugestões</h2>
+            <p>Aqui você pode adicionar suas sugestões.</p>
+            <textarea placeholder="Digite suas sugestões aqui..."></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+    <!-- Adicionando o JavaScript -->
+    <script>
+        function abrirPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function fecharPopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    <!-- Navbar -->
+
+    <!-- menu inicial -->
+
+    <div class="container">
+        <div class="imagem-com-texto">
+            <p class="titulo1"><b>Listenfy</b></p>
+
+            <p class="frase1"> Sugestões de Albuns e Playlists <br>
+                para cada gênero! </p>
+        </div>
+    </div>
+
+    <!-- menu inicial -->
+
+     <hr>
+<p class="escolha"><b>Escolha um gênero:</b></p>
+
+    <!-- ROCK -->
+    <div class="container1">
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="video/backgroundred.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="rock">
+            <a href="Rock Pagina.html"><p><b>ROCK</b></p> </a>
+        </div>
+    </div>
+    <!-- ROCK -->
+
+    <BR>
+    <BR>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- POP -->
+    <div class="container2">
+        <div class="video-background1">
+            <video autoplay loop muted playsinline>
+                <source src="video/backgroundblue.mp4"
+                    type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="pop">
+            <a href="Pop pagina.html"><img src="img/Pop/logopop.png" class="poplogo"></a>
+        </div>
+    </div>
+    <!-- POP -->
+
+    <BR>
+    <BR>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Eletronica -->
+    <div class="container3">
+        <div class="video-background2">
+            <video autoplay loop muted playsinline>
+                <source src="video/Eletronic vies.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+        <div class="eletronica">
+            <a href="ravesphere pagina.html"><p> < RAVESHEPHERE > </p> </a>
+        </div>
+    </div>
+    <!-- Eletronica -->
+
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</html>
